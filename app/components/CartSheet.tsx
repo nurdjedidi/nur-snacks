@@ -42,9 +42,7 @@ export default function CartSheet({
       (item) => `• ${item.qty}x ${item.product.name} (${item.product.unit}) — ${(item.product.price * item.qty).toFixed(2)}€`
     );
 
-    const deliveryNote = totalPrice >= 5
-      ? `Mode : Retrait ou Livraison (~500m max) si dispo`
-      : `Mode : Retrait uniquement (total < 5€)`;
+    const deliveryNote = `Mode : Retrait ou Livraison (a convenir selon distance/commande)`;
 
     const messageText = `Bonjour Nûr Snacks !\nJe souhaite passer une commande :\n\n${itemsText.join(
       "\n"
@@ -106,15 +104,9 @@ export default function CartSheet({
               ))}
             </div>
 
-            <div className={`flex items-start gap-2 rounded-2xl px-4 py-2.5 text-xs font-semibold mt-4 ${totalPrice >= 5
-                ? "bg-emerald-500/10 text-emerald-300 border border-emerald-500/20"
-                : "bg-amber-500/10 text-amber-300 border border-amber-500/20"
-              }`}>
+            <div className="flex items-start gap-2 rounded-2xl px-4 py-2.5 text-xs font-semibold mt-4 bg-amber-500/10 text-amber-300 border border-amber-500/20">
               <Info className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" />
-              {totalPrice >= 5
-                ? `Félicitations ! Vous êtes éligible à la livraison si vous habitez à moins de 500m.`
-                : `Retrait uniquement en dessous de 5€ — ajoutez encore ${(5 - totalPrice).toFixed(2)}€ pour la livraison.`
-              }
+              <span>Retrait sur place ou livraison possible selon distance &amp; commande (à convenir).</span>
             </div>
           </div>
         )}

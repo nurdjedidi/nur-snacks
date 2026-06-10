@@ -7,7 +7,7 @@ const faqList = [
   },
   {
     question: "Faites-vous de la livraison à domicile ?",
-    answer: "La livraison est exceptionnelle et uniquement disponible pour les commandes d'au minimum 5€ et dans un rayon de 500 mètres. Au-delà de ce périmètre ou en dessous de ce montant, le retrait est obligatoire. En cas de doute, contactez-moi par WhatsApp avant de commander.",
+    answer: "Oui, la livraison à domicile est disponible pour les commandes selon la distance et le montant.",
   },
   {
     question: "Les bonbons et confiseries sont-ils réellement Halal ?",
@@ -15,7 +15,7 @@ const faqList = [
   },
   {
     question: "Où se situe le point de retrait ?",
-    answer: "Le point de retrait est situé dans le quartier des Couronneries à Poitiers. Une fois votre commande passée sur WhatsApp, je vous communique l'adresse exacte du point de retrait.",
+    answer: "Le point de retrait est situé dans le quartier des Couronneries à Poitiers. Une fois votre commande passée sur WhatsApp, je vous communique l'adresse exacte du point de retrait, sur place ou à un point de rendez-vous.",
   },
 ];
 

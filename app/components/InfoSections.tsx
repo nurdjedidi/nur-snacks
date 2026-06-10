@@ -30,13 +30,6 @@ export default function InfoSections() {
             </div>
           </div>
 
-          <div className="mt-8 flex items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4">
-            <AlertCircle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
-            <div className="text-xs leading-relaxed text-amber-900">
-              <span className="font-black">Note de livraison : </span>
-              La livraison à domicile est disponible uniquement pour les commandes d'au moins <span className="font-black">5€</span> et dans un rayon de <span className="font-black">500 mètres</span> autour de chez moi (Couronneries, Poitiers). En dehors de ces conditions, le <span className="font-black">retrait sur place</span> est la seule option disponible.
-            </div>
-          </div>
         </div>
       </section>
 
