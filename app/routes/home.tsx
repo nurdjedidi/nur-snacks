@@ -47,7 +47,7 @@ export function meta({ }: Route.MetaArgs) {
     {
       name: "description",
       content:
-        "Commandez vos bonbons halal HCS, chocolats et boissons fraîches à Poitiers Couronneries. Commande ultra-rapide via WhatsApp.",
+        "Commandez vos bonbons, chocolats et boissons fraîches à Poitiers Couronneries. Commande ultra-rapide via WhatsApp.",
     },
     {
       name: "keywords",
