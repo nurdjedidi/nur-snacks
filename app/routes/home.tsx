@@ -34,12 +34,6 @@ const jsonLd = {
     "latitude": 46.5962,
     "longitude": 0.3544
   },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "14:00",
-    "closes": "21:00"
-  },
   "areaServed": {
     "@type": "AdministrativeArea",
     "name": "Poitiers Couronneries"
@@ -49,7 +43,7 @@ const jsonLd = {
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "Nûr Snacks | Bonbons Halal HCS & Boissons à Poitiers" },
+    { title: "Nûr Snacks | Bonbons, snacks, chocolats & boissons à Poitiers" },
     {
       name: "description",
       content:
@@ -143,8 +137,8 @@ export default function Home() {
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${selectedCategory === cat
-                      ? "bg-white text-slate-950 shadow-sm tab-active"
-                      : "text-slate-500 hover:text-slate-800"
+                    ? "bg-white text-slate-950 shadow-sm tab-active"
+                    : "text-slate-500 hover:text-slate-800"
                     }`}
                 >
                   {cat === "all" && <span className="flex items-center gap-1.5"><ShoppingBag className="w-3.5 h-3.5" /> Tout</span>}
