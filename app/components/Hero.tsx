@@ -3,7 +3,7 @@ import { whatsappConfig } from "../data/products";
 
 export default function Hero() {
   return (
-    <section className="mb-14 flex flex-col items-center text-center rounded-[2.5rem] border border-amber-100/50 bg-white/70 p-8 shadow-xl shadow-amber-50/20 backdrop-blur-md sm:p-12 lg:p-16 relative">
+    <section className="mb-14 flex flex-col items-center text-center rounded-[2.5rem] border border-amber-100/50 bg-white/70 p-8 shadow-xl shadow-amber-50/20 backdrop-blur-md sm:p-12 lg:p-16 relative overflow-hidden">
       <div className="absolute -right-24 -top-24 w-64 h-64 rounded-full bg-amber-500/5 blur-3xl pointer-events-none" />
       <div className="absolute -left-24 -bottom-24 w-64 h-64 rounded-full bg-rose-500/5 blur-3xl pointer-events-none" />
 

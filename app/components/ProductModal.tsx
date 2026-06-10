@@ -60,7 +60,7 @@ export default function ProductModal({
       <div className="absolute inset-0" onClick={onClose} />
       
       {/* Modal Container */}
-      <div className="relative w-full max-h-[85vh] md:max-h-[80vh] md:max-w-2xl bg-white rounded-t-[2rem] md:rounded-[2rem] shadow-2xl border border-slate-100 flex flex-col md:flex-row overflow-hidden z-10 animate-scale-up">
+      <div className="relative w-full max-w-md md:max-w-2xl max-h-[85vh] md:max-h-[80vh] bg-white rounded-[2rem] shadow-2xl border border-slate-100 flex flex-col md:flex-row overflow-hidden z-10 animate-scale-up">
         {/* Close Button */}
         <button
           onClick={onClose}

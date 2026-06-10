@@ -21,6 +21,8 @@ html {
 html,
 body {
   min-height: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -122,4 +124,33 @@ details.faq-item summary::-webkit-details-marker {
   height: 3px;
   background: linear-gradient(90deg, #f59e0b, #ef4444);
   border-radius: 9999px;
+}
+
+/* Modal Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale-up {
+  animation: scale-up 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
